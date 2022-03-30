@@ -1,0 +1,62 @@
+// @import './vars';
+
+// $spacing-values: '1' '2' '3' '4' '5' '6' '7' '8' '9' '10';
+// @each $spacing-value in $spacing-values {
+//   .is-mt-#{$spacing-value} {
+//     margin-top: #{$spacing-value}0px;
+//   }
+//   .is-mb-#{$spacing-value} {
+//     margin-bottom: #{$spacing-value}0px;
+//   }
+//   .is-ml-#{$spacing-value} {
+//     margin-left: #{$spacing-value}0px;
+//   }
+//   .is-mr-#{$spacing-value} {
+//     margin-right: #{$spacing-value}0px;
+//   }
+//   .is-pt-#{$spacing-value} {
+//     padding-top: #{$spacing-value}0px;
+//   }
+//   .is-pb-#{$spacing-value} {
+//     padding-bottom: #{$spacing-value}0px;
+//   }
+//   .is-pl-#{$spacing-value} {
+//     padding-left: #{$spacing-value}0px;
+//   }
+//   .is-pr-#{$spacing-value} {
+//     padding-right: #{$spacing-value}0px;
+//   }
+// }
+
+@for $size from 1 through 300 {
+  .is-mt-#{$size} {
+    margin-top: #{$size}px;
+  }
+  .is-mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+  .is-ml-#{$size} {
+    margin-left: #{$size}px;
+  }
+  .is-mr-#{$size} {
+    margin-right: #{$size}px;
+  }
+  .is-m-#{$size} {
+    margin: #{$size}px;
+  }
+  .is-pt-#{$size} {
+    padding-top: #{$size}px;
+  }
+  .is-pb-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+  .is-pl-#{$size} {
+    padding-left: #{$size}px;
+  }
+  .is-pr-#{$size} {
+    padding-right: #{$size}px;
+  }
+  .is-p-#{$size} {
+    padding: #{$size}px;
+  }
+}

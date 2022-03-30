@@ -1,0 +1,40 @@
+@import './vars';
+
+.is-flex {
+  display: flex;
+}
+.is-vflex {
+  flex-direction: column;
+}
+
+// $flex-values: 'start' 'end' 'around' 'between' 'center' 'baseline' 'evenly';
+@each $flex-value in $flex-values {
+  .is-#{$flex-value} {
+    @if $flex-value ==
+      'around' or
+      $flex-value ==
+      'between' or
+      $flex-value ==
+      'evenly'
+    {
+      justify-content: space-#{$flex-value};
+    } @else {
+      justify-content: #{$flex-value};
+    }
+  }
+  .is-v#{$flex-value} {
+    @if $flex-value ==
+      'around' or
+      $flex-value ==
+      'between' or
+      $flex-value ==
+      'evenly'
+    {
+      align-items: space-#{$flex-value};
+    } @else if $flex-value == 'start' or $flex-value == 'end' {
+      align-items: flex-#{$flex-value};
+    } @else {
+      align-items: #{$flex-value};
+    }
+  }
+}

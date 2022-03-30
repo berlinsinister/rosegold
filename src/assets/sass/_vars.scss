@@ -1,0 +1,26 @@
+// flex positions
+$flex-values: 'start' 'end' 'around' 'between' 'center' 'baseline' 'evenly';
+
+// margin & padding
+$spacing-values: '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13' '14'
+  '15' '16' '17' '18' '19' '20';
+
+// text settings
+$text-transform-values: 'uppercase' 'lowercase' 'capitalize';
+$text-align-settings: 'left' 'right' 'center';
+
+// font weight and style
+$font-weight: 'normal' 'bold' 'bolder' 'lighter' '100' '200' '300' '400' '500'
+  '600' '700' '800' '900';
+$font-style: 'normal' 'italic' 'oblique';
+
+// main colors
+$main-colors: 'white' 'black' 'gainsboro' 'gray';
+
+$margin: 152px;
+$margin-left: 213px; // 201px;
+$margin-right: 214px; // 202px;
+$screen-actual-width: 1903px;
+
+// position settings
+$position-values: 'static' 'relative' 'absolute' 'fixed' 'sticky';

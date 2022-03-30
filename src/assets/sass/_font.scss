@@ -1,0 +1,19 @@
+@import './vars';
+
+@each $weight in $font-weight {
+  .is-font-weight-#{$weight} {
+    font-weight: #{$weight};
+  }
+}
+
+@each $style in $font-style {
+  .is-font-style-#{$style} {
+    font-style: #{$style};
+  }
+}
+
+@for $size from 1 through 200 {
+  .is-font-size-#{$size} {
+    font-size: #{$size}px;
+  }
+}

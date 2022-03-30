@@ -1,0 +1,24 @@
+@import './vars';
+
+// $main-colors: 'white' 'black' 'gainsboro' 'gray';
+@each $color in $main-colors {
+  .is-#{$color} {
+    color: #{$color};
+  }
+  .is-bg-#{$color} {
+    background: #{$color};
+  }
+}
+
+.is-emerald {
+  color: #00a189;
+}
+.is-bg-emerald {
+  background: #00a189;
+}
+.is-dirtypink {
+  color: #eabfb9;
+}
+.is-bg-dirtypink {
+  background: #eabfb9;
+}

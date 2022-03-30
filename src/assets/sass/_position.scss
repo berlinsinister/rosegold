@@ -1,0 +1,8 @@
+@import './vars';
+
+// $position-values: 'static' 'relative' 'absolute' 'fixed' 'sticky';
+@each $position in $position-values {
+  .is-#{position} {
+    position: #{$position};
+  }
+}

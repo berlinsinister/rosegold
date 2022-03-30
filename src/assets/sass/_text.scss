@@ -1,0 +1,23 @@
+@import './vars';
+
+// $text-transform-values: 'uppercase' 'lowercase' 'capitalize';
+// $text-align-settings: 'left' 'right' 'center'
+
+@each $transform in $text-transform-values {
+  .is-#{$transform} {
+    text-transform: #{$transform};
+  }
+}
+
+@each $align in $text-align-settings {
+  .is-text-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+.is-underline {
+  text-decoration: underline;
+}
+.is-none-decoration {
+  text-decoration: none;
+}
